@@ -9,7 +9,7 @@ st.set_page_config(page_title="Pneumonia Classifier", layout="centered")
 @st.cache_resource
 def load_model():
     # Path to your copied Kaggle weight
-    model = YOLO("d:/pneumonia/pneumonia_yolo11.pt")  # best.pt renamed
+    model = YOLO("pneumonia_yolo11.pt")  # best.pt renamed
     # Force CPU if you’re on a CPU-only host
     model.to("cpu")
     return model
